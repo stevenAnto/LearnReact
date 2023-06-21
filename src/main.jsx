@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 const root =ReactDOM.createRoot(document.getElementById('root'))
 
 
-const createButton = ({text})=>{
+const Button = ({text})=>{
   return (
 
 
@@ -21,8 +21,8 @@ const createButton = ({text})=>{
 
 root.render(
   <React.Fragment>
-    {createButton({text: 'Burron 1'})}
-    {createButton({text: 'Burron 2'})}
-    {createButton({text: 'Burron 3'})}
+    <Button text= "button 1"/>
+    <Button text= "button 2"/>
+    <Button text= "button 3"/>
   </React.Fragment>
 )
