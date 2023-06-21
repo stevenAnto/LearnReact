@@ -3,6 +3,10 @@ import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 
 export function App(){
   return (
-    <TwitterFollowCard />
+    <>
+    <TwitterFollowCard userName="Esteven Calcinan" name="stevenAnto" />
+    <TwitterFollowCard userName=" Heneyr Isas" name="ElImbetiable" />
+    <TwitterFollowCard userName=" Antony Aco" name="Atn" />
+    </>
   )
 }
