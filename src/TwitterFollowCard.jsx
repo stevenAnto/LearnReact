@@ -5,7 +5,7 @@ export function TwitterFollowCard({formatUsername, userName, name, isFollowing})
         <img className='tw-followCard-avatar' src="https://unavatar.io/github/37t?fallback=https://avatars.githubusercontent.com/u/66378906?v=4" />
         <div className='tw-followCard-info'>
           <strong>{name}</strong>
-          <span className='tw-followCard-infoUserName'>{formatUsername(userName)}</span>
+          <span className='tw-followCard-infoUserName'>{formatUsername}</span>
         </div>
       </header>
       <aside>
