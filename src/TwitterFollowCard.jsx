@@ -1,6 +1,17 @@
-export function TwitterFollowCard({children,formatUsername, userName, name, isFollowing}){
+import { useState } from 'react'
+
+
+export function TwitterFollowCard({children,formatUsername, userName, name}){
+  const [isFollowing, setIsFollowing] =useState(false)
+  const handleClick =()=>{
+    setIsFollowing(!isFollowing)
+  }
+
+
+
   const text = isFollowing ? 'Siguiendo':'seguir'
-  const buttonClassName = isFollowing ? 'tw-followCard-button ':'tw-followCard-button'
+
+  const buttonClassName = isFollowing ? 'tw-followCard-button is-following ':'tw-followCard-button'
   return (
     <article  className='tw-followCard' >
       <header className='tw-followCard-header'>
@@ -11,7 +22,7 @@ export function TwitterFollowCard({children,formatUsername, userName, name, isFo
         </div>
       </header>
       <aside>
-        <button className="tw-followCard-button">
+        <button className={buttonClassName} onClick={handleClick}>
           {text}
         </button>
       </aside>
