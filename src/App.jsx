@@ -2,22 +2,24 @@ import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 
 export function App(){
-  const formattedUserName = <span>@userName</span>
   return (
     <>
       <TwitterFollowCard
-        formatUsername = {formattedUserName}
         isFollowing={true}
         userName="Esteven Calcinan"
-        name="stevenAnto" />
+      >Miguel Angel duran
+      </TwitterFollowCard>
       <TwitterFollowCard
-        formatUsername = {formattedUserName}
+        isFollowing={false}
         userName=" Heneyr Isas"
-        name="ElImbetiable" />
+      >Esteven Antonio
+      </TwitterFollowCard>
       <TwitterFollowCard
-        formatUsername = {formattedUserName}
+        isFollowing
         userName=" Antony Aco"
-        name="Atn" />
+      >
+        Gustavo Ordonez
+      </TwitterFollowCard>
     </>
   )
 }
