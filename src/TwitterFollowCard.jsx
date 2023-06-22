@@ -1,4 +1,6 @@
 export function TwitterFollowCard({children,formatUsername, userName, name, isFollowing}){
+  const text = isFollowing ? 'Siguiendo':'seguir'
+  const buttonClassName = isFollowing ? 'tw-followCard-button ':'tw-followCard-button'
   return (
     <article  className='tw-followCard' >
       <header className='tw-followCard-header'>
@@ -9,8 +11,8 @@ export function TwitterFollowCard({children,formatUsername, userName, name, isFo
         </div>
       </header>
       <aside>
-        <button>
-          Seguir
+        <button className="tw-followCard-button">
+          {text}
         </button>
       </aside>
     </article>
