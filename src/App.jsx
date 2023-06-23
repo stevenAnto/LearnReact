@@ -23,7 +23,7 @@ const users = [
     userName :'TMChein',
     name : 'Taiwne Chenillo',
     isFollowing : false
-  }
+  },
   {
     userName :'Pequenia Saltaria',
     name : 'Hola k Ase',
