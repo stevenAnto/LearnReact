@@ -24,6 +24,11 @@ const users = [
     name : 'Taiwne Chenillo',
     isFollowing : false
   }
+  {
+    userName :'Pequenia Saltaria',
+    name : 'Hola k Ase',
+    isFollowing : false
+  }
 ]
 
 users.map(user=>{
